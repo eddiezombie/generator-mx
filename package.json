@@ -1,0 +1,31 @@
+{
+  "name": "generator-mx",
+  "version": "1.0.0",
+  "description": "Base for projects html standar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddiezombie/generator-mx.git"
+  },
+  "author": "Multiplica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddiezombie/generator-mx/issues"
+  },
+  "homepage": "https://github.com/eddiezombie/generator-mx#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-connect-multi": "^1.0.8",
+    "gulp-sass": "^3.1.0",
+    "path-exists": "^3.0.0",
+    "run-sequence": "^2.2.0",
+    "yargs": "^10.0.3"
+  }
+}
