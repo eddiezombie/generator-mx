@@ -42,10 +42,10 @@ gulp.task('server', connect.server({
   }
 }));
 
-
-gulp.task('html', function () {
-  gulp.src('./dist/*.html')
-    .pipe(connect.reload());
+gulp.task('html', function() {
+	gulp.src('./dev/*.html')
+		.pipe(connect.reload())
+		.pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('css', function() {
@@ -64,6 +64,7 @@ gulp.task('fonts', function() {
 
 // Watching
 gulp.task('watch', function () {
+  gulp.watch('./dev/*.html', ['html']);
   gulp.watch(files.scss.watch, ['css']);
 });
 
