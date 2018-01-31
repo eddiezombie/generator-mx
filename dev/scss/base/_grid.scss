@@ -20,7 +20,7 @@
 	margin-right:auto;
 	max-width: $grid-max-width;
 }
-[class*='u-col_'] {
+[class*='u-col-'] {
 	float: left;
 	// padding-left: $gutter;
 	// padding-right: $gutter;
@@ -29,7 +29,7 @@
 }
 
 @for $i from 1 through $grid-cols {
-	.u-col_#{$i} {
+	.u-col-#{$i} {
 		width: 100% / $grid-cols * $i;
 	}
 }
