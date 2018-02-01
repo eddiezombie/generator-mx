@@ -1,0 +1,181 @@
+.condition{
+    p{
+    font-weight: lighter;
+    margin: 0px;
+    font-size: 12px;    
+    }
+    span{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 20px;
+        font-weight: lighter;
+        margin-bottom: 5px;
+    }
+
+    .condition-titles{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border-bottom: 1px solid #E0E0E0;
+        padding-bottom: 20px;
+        p{
+            display: inline;
+            margin-right: 15px;
+            @media(max-width: 760px){
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .condition-table{
+        h2{
+            font-size: 14px;
+            background: #E7E7E7;
+            padding: 15px;
+            color: #444444;
+            font-weight: bold;
+            margin: 0;
+            box-sizing: border-box;
+            *width: auto;
+        }
+        table{
+            width: 100%;
+            thead{
+                tr{
+                    th{
+                        text-align: left;
+                        padding: 15px 15px 15px 15px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        padding: 10px 15px 10px 15px;
+                        @media(max-width: 760px){
+                            display: inline-block;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                        .condition-table__tables__term{
+                            display: none;
+                            @media(max-width: 760px){
+                                display: block;
+                                width: 100%;
+                                margin-bottom: 20px;
+                                float: left;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .sub-table{
+                @media(max-width: 760px){
+                    td{
+                        width: 70%;
+                    }
+
+                }
+            }
+        }
+
+        .condition-table__tables{
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 0px;
+            width: 100%;
+            border: 1px solid #E0E0E0;
+            text-align: left;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-bottom: 20px;
+            thead{
+                background-color: #f3f3f3;
+                @media(max-width: 760px){
+                    display: none;
+                }
+            }
+
+            tbody{
+                .gray{
+                    background: #f3f3f3
+                }
+                .white{
+                    background: #fff    
+                }
+            }
+        }
+    }
+     
+    .condition-table--small{
+        @media(max-width: 760px ){
+            .condition-table__tables{
+                tbody{
+                    tr{
+                        td {
+                            padding: 10px;
+                            .condition-table__tables__term{
+                                width: 40%;
+                                float: left;
+                                margin: 0px;
+                                text-align: left;
+                            }
+                            .condition-table__tables__value{
+                                width: 40%;
+                                float: right;
+                                text-align: right;
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .condition-table--big{
+        @media(max-width: 760px){
+            .condition-table__tables{
+                tbody{
+                    tr{
+                        td{
+                            padding: 10px;
+                            .condition-table__tables__term{
+                                width: 40%;
+                                float: left;
+                                margin: 0px;
+                            }
+                            .condition-table__tables__value{
+                                width: 40%;
+                                float: right;
+                                text-align: right;
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cont-day{
+            display: none;
+            @media(max-width: 760px){
+                width: 32%;
+                display: inline-block;
+                p{
+                    display: block;
+                    strong{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .desk{
+            @media(max-width: 760px){
+                display: none;
+            }
+        }
+    }   
+}
