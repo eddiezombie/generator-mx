@@ -34,6 +34,13 @@
 	}
 }
 
+@media screen and (max-width:$breakpoint_tablet) {
+	@for $i from 1 through $grid-cols {
+		.u-col-mb-#{$i} {
+			width: 100% / $grid-cols * $i;
+		}
+	}
+}
 @media screen and (max-width:$breakpoint_mobile) {
 	@for $i from 1 through $grid-cols {
 		.u-col-#{$i} {

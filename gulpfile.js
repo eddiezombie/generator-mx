@@ -50,9 +50,11 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
 	gulp.src(files.scss.src)
+	.pipe($.plumber({errorHandler: $.notify.onError("<%= error.message %>")}))
 	.pipe($.sass({outputStyle: 'expanded'}))
 	.pipe($.autoprefixer())
 	.pipe($.csso())
+	.pipe($.notify("Compiled: <%= file.relative %>"))
 	.pipe(connect.reload())
 	.pipe(gulp.dest(files.scss.dist));
 });
