@@ -1,0 +1,124 @@
+.container{
+	max-width: 761px;
+	min-width: 320px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(../img/img-impuestos-desk.jpg);
+    width: 100%;
+    background-position: 32% -19px;
+    *background-position:55% -40px;
+    background-position:55% -40px\0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-sizing: border-box;
+    @media(max-width: 654px){
+		background-position: 53% -15px;
+		text-align: center;
+		background-image: url(../img/img-impuestos-mobile.jpg);
+    }
+
+    .main{
+    	width: 50%;
+	    background-image: url(../img/rec-opacity.png);
+	    background-repeat: no-repeat;
+	    background-repeat: no-repeat;
+	    padding: 50px 30px 50px 30px;
+	    position: relative;
+	    float: left;
+	    @media(max-width: 654px){
+			float: none;
+			width: 100%;
+			background-color: $white;
+			margin-top: 59%;
+			padding-top: 1px;
+			box-sizing: border-box;
+	    }
+
+	    p{
+			display: block;
+			font-size: 14px;
+		}
+		h1{
+			font-weight: lighter;
+			font-size: 35px;
+			*margin-bottom: 50px;
+			line-height: 110%;
+			@media(max-width: 654px){
+				font-size: 28px;
+
+			}
+
+			strong{
+				display: block;
+				font-weight: 800;
+				@media(max-width: 654px){
+					display: block;
+				}
+			}
+			span{
+				font-weight: 500;
+				display: block;
+				@media(max-width: 654px){
+					display: inline;
+				}
+			}
+		}
+
+	    .flag{
+	    	position: absolute;
+		    left: 82%;
+		    top: 4%;
+		    width: 130px;
+		    @media(max-width: 654px){
+				display: none;
+		    }
+	    }
+    }
+
+}
+
+.box-red{
+		width: 94%;
+		padding: 10px;
+		position: relative;
+		margin-top: 30px;
+		border-top: 1px solid #DDDDDD;
+		padding-top: 25px;
+		@media(max-width: 654px){
+			padding: 20px;
+			width: 100%;
+			box-sizing: border-box;
+			text-align: left;
+		}
+		p{
+			margin: 0px;
+			padding-left: 30px;
+			@media(max-width: 654px){
+				padding-left: 15px;
+				text-align: center;
+			}
+			@media(max-width: 493px){
+				padding-left: 35px;
+				text-align: left;
+			}
+		}
+		img{
+			position: absolute;
+			left: 0px;
+    		top: 28px;
+			top: 25px\0;
+			*top:25px;
+			@media(max-width: 654px){
+				top: 15px;
+				left: 15px;
+			}
+			@media(max-width: 604px){
+				left: 10px;
+			}
+			@media(max-width: 592px){
+				top: 25px;
+			}
+
+		}
+	}
