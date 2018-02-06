@@ -35,7 +35,7 @@ files = {
 // Task
 gulp.task('server', connect.server({
   root: ['dist'],
-  port: 3001,
+  port: 3000,
   livereload: true,
   open: {
     browser: 'Google Chrome'
