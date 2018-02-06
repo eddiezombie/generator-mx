@@ -1,0 +1,146 @@
+.input {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600;
+  color: #333333;
+  background-color: transparent;
+  padding: 10px;
+  display: block;
+  width: calc(100% - 20px);
+  border: none;
+  border-bottom: 1px solid #949494;
+  &:focus {
+    outline: none;
+  }
+}
+
+.checkbox-only{
+    margin-top: 30px;
+    form{
+        margin-top: 20px;
+        position: relative;
+    }
+    .icon-information{
+        color:$white;
+        background-color: $cyan;
+        border-radius: 50%;
+        padding: 4px;
+        font-size: 12px;
+        position: absolute;
+        left: 150px;
+        top: 3px;
+    }
+    .tooltips {
+      width: 33.3333%;
+      float: left;
+      text-align: center;
+     }
+
+    .tooltip {
+      .tooltip_elemento {
+        margin: 0 auto;
+        display: inline-block;
+        opacity: 0.9;
+        padding: 20px;
+        font-size: 12px;
+        width: 160px;
+        text-align: left;
+        background-color:$black;
+        color: $white;
+        transition: All .3s ease;
+        -webkit-transition: All .3s ease;
+        -moz-transition: All .3s ease;
+        -o-transition: All .3s ease;
+        -moz-box-shadow: 0px 0px 5px #b8b8b8;
+        -webkit-box-shadow: 0px 0px 5px #b8b8b8;
+        box-shadow: 0px 0px 5px #b8b8b8;   
+        position: absolute;
+        z-index: 1;
+        top: -111%;
+        left: 35%;
+        margin-left: -100px;
+        transition: All .3s ease;
+        -webkit-transition: All .3s ease;
+        -moz-transition: All .3s ease;
+        -o-transition: All .3s ease;
+        visibility: hidden;
+        border-radius: 3px;
+        line-height: 1.45em;
+        @media(max-width: 767px){
+            padding-left: 45px;
+            &.tooltipHide{display: none;}
+        }
+        .icon-informacion{
+            left: 10px;
+            top: 29.85%;
+            display: none;
+            bottom: 0;
+            height: 14px;
+            width: 14px;
+            vertical-align: middle;
+            float: left;
+            text-align: center;
+            padding-left: 4px;
+            padding-right: 2px;
+            padding-top: 4px;
+            padding-bottom: 3px;
+            @media(max-width: 767px){
+              display: block;
+            }
+        }
+        .fst {
+            top: 26%;
+        }
+      }
+      &:hover .tooltip_elemento {
+        visibility: visible;
+        opacity: 80;
+        border-radius: 3px;
+      }
+    }
+
+    .tooltip_elemento {
+      &.tooltipRojo:before {
+        border: 1px solid $red;
+        border-right: 0;
+        border-bottom: 0;
+      }
+    }
+
+    .tooltipRojo {
+      border: 1px solid $red;
+    }
+
+    .tooltip_elemento.tooltipVerde:before {
+      border: 1px solid #afbf31;
+      border-right: 0;
+      border-bottom: 0;
+    }
+
+    .tooltipVerde {
+      border: 1px solid #afbf31;
+    }
+
+    .tooltip_elemento.tooltipNaranja:before {
+      border: 1px solid #d29b36;
+      border-right: 0;
+      border-bottom: 0;
+    }
+
+    .tooltipNaranja {
+      border: 1px solid #d29b36;
+    }    
+
+}
+
+span.agree {
+  display: none;
+  @media(max-width:767px){
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 10px auto 0;
+    font-weight: 800;
+
+  }
+}
