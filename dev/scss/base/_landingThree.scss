@@ -1,4 +1,4 @@
-.container{
+.landing--right{
 	max-width: 761px;
 	min-width: 320px;
     position: relative;
@@ -18,7 +18,7 @@
 		background-image: url(../img/img-impuestos-mobile.jpg);
     }
 
-    .main{
+    .landing--right-container{
     	width: 50%;
 	    background-image: url(../img/rec-opacity.png);
 	    background-repeat: no-repeat;
@@ -44,6 +44,7 @@
 			font-size: 35px;
 			*margin-bottom: 50px;
 			line-height: 110%;
+			color: #5B5A5B;
 			@media(max-width: 654px){
 				font-size: 28px;
 
@@ -52,6 +53,7 @@
 			strong{
 				display: block;
 				font-weight: 800;
+				color: #5B5A5B;
 				@media(max-width: 654px){
 					display: block;
 				}
@@ -65,7 +67,7 @@
 			}
 		}
 
-	    .flag{
+	    .landing--right-container__arrow{
 	    	position: absolute;
 		    left: 82%;
 		    top: 4%;
@@ -78,7 +80,7 @@
 
 }
 
-.box-red{
+.landing--right-container__box{
 		width: 94%;
 		padding: 10px;
 		position: relative;
