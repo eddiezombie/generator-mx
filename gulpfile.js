@@ -59,17 +59,31 @@ gulp.task('css', function() {
 	.pipe(gulp.dest(files.scss.dist));
 });
 
+//javascript
+gulp.task('scripts', function(){
+	gulp.src('./dev/js/*.js')
+		.pipe(connect.reload())
+		.pipe(gulp.dest('./dist/js/'));
+});
+
 gulp.task('fonts', function() {
 	gulp.src(files.fonts.src)
 		.pipe(gulp.dest(files.fonts.dist));
 });
 
+gulp.task('images', function(){
+	gulp.src('./dev/img/**')
+		.pipe(connect.reload())
+		.pipe(gulp.dest('./dist/img/'));
+})
 // Watching
 gulp.task('watch', function () {
   gulp.watch('./dev/*.html', ['html']);
   gulp.watch(files.scss.watch, ['css']);
+  gulp.watch('./dev/js/*.js', ['scripts']);
+  gulp.watch('./dev/img/*.png','./dev/img/*.jpg', ['images']);
 });
 
 // Global task
-gulp.task('default', ['server', 'watch','fonts']);
+gulp.task('default', ['server', 'watch', 'fonts']);
 

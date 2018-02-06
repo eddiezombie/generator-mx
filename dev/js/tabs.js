@@ -1,4 +1,5 @@
-function inicia_tab(){
+alert('hello world!');
+/*function inicia_tab(){
      //tabs
      $('.cnt-tab').hide();
     // $('.cnt-tab:first').show();
@@ -268,4 +269,4 @@ $('.panel-heading.clickable').click(function() {
         }
     });
 
-});
+});*/
