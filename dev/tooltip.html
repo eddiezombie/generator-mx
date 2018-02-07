@@ -7,49 +7,48 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<section class="tooltip">
-			<div class="main clearfix">
+        <section class="container">
+            <div class="main">
                 <h3>Seleccione los Seguros</h3>  
                 <p>La contratación de Seguros es opcional y serán financiados con el monto bruto del crédito.</p>
-                    <div class="checkbox-only">
-                        <form action="">
-                            <input class="inputCheck" id="modal1" type="checkbox" name="accept" value="5" checked="checked" >
-                            <label class="labelCheck" for="modal1" >Desgravamen</label>
-                            <div class="tooltip">
-                                <i class="icon-information added"></i>
-                                <span class="tooltip_elemento p_m tooltipHide"><i class="icon-information fst"></i>Cubre la deuda del Crédito, en caso de Fallecimiento.
-                                <span class="agree">De acuerdo</span>
-                                </span>
-                            </div>
-                        </form>
-                        <form action="">
-                            <input class="inputCheck" id="modal2" type="checkbox" name="accept" value="6" checked="checked" >
-                            <label class="labelCheck" for="modal2" >Cesantía</label>
-                            <div class="tooltip">
-                                <i class="icon-information added"></i>
-                                <span class="tooltip_elemento p_m tooltipHide"><i class="icon-information"></i>Cubre hasta 3 cuotas de Libre Disponibilidad, en caso de Desempleo Involuntario o Incapacidad Laboral.
-                                <span class="agree">De acuerdo</span>
-                                </span>
-                            </div>
-                        </form>
-                        <form action="">
-                            <input class="inputCheck" id="modal3" type="checkbox" name="accept" value="7" checked="checked">
-                            <label class="labelCheck" for="modal3">Vida</label>
-                            <div class="tooltip">
-                                <i class="icon-information added"></i>
-                                <span class="tooltip_elemento p_m tooltipHide"><i class="icon-information"></i>Paga un capital de Libre disponibilidad,igual al monto inicial del Crédito, en caso de fallecimiento.
-                                <span class="agree">De acuerdo</span>
-                                </span>
-                            </div>
-                        </form>   
-                    </div>
-                <div class="action flex clearfix">
-                    <a href="index.html" class="botonNew"><span class="icon-flecha-izquierda iconoIzquierdaVolver"></span>Volver al detalle de deudas</a>
-                    <a href="03.html" class="botonNew botonPrimario">SIMULAR<span class="icon-flecha-derecha iconoDerecha"></span></a>
+                <div class="checkbox">
+                    <form action="">
+                        <input class="inputCheck" id="modal1" type="checkbox" name="accept" value="5" checked="checked" >
+                        <label class="labelCheck" for="modal1">Desgravamen</label>
+                        <div class="tooltip">
+                            <i class="icon-information added"></i>
+                            <span class="tooltip--element tooltip--hide">Cubre la deuda del Crédito, en caso de Fallecimiento.
+                            <span class="agree">De acuerdo</span>
+                            </span>
+                        </div>
+                    </form>
+                    <form action="">
+                        <input class="inputCheck" id="modal2" type="checkbox" name="accept" value="6" checked="checked" >
+                        <label class="labelCheck" for="modal2" >Cesantía</label>
+                        <div class="tooltip">
+                            <i class="icon-information added"></i>
+                            <span class="tooltip--element  tooltip--hide">Cubre hasta 3 cuotas de Libre Disponibilidad, en caso de Desempleo Involuntario o Incapacidad Laboral.
+                            <span class="agree">De acuerdo</span>
+                            </span>
+                        </div>
+                    </form>
+                    <form action="">
+                        <input class="inputCheck" id="modal3" type="checkbox" name="accept" value="7" checked="checked">
+                        <label class="labelCheck" for="modal3">Vida</label>
+                        <div class="tooltip">
+                            <i class="icon-information added"></i>
+                            <span class="tooltip--element tooltip--hide">Paga un capital de Libre disponibilidad,igual al monto inicial del Crédito, en caso de fallecimiento.
+                            <span class="tooltip--agree">De acuerdo</span>
+                            </span>
+                        </div>
+                    </form>   
                 </div>
-
-            </div>
-		</section>
+            </div> 
+        </section>
+        <script
+  src="http://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
 	   <script src='js/tooltip.js'></script>	
 	</body>
 </html>
