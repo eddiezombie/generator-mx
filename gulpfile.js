@@ -81,7 +81,7 @@ gulp.task('watch', function () {
   gulp.watch('./dev/*.html', ['html']);
   gulp.watch(files.scss.watch, ['css']);
   gulp.watch('./dev/js/*.js', ['scripts']);
-  gulp.watch('./dev/img/*.png','./dev/img/*.jpg', ['images']);
+  gulp.watch('./dev/img/**', ['images']);
 });
 
 // Global task
