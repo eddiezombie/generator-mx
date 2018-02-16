@@ -15,68 +15,56 @@
           font-size: 12px;
           text-align: center;
       }
-        .tooltip--element {
-          margin: 0 auto;
-          opacity: 0.9;
-          padding: 20px;
-          font-size: 12px;
-          width: 250px;
-          transition: All .3s ease;
-          -webkit-transition: All .3s ease;
-          -moz-transition: All .3s ease;
-          -o-transition: All .3s ease;
-          -moz-box-shadow: 0px 0px 5px #b8b8b8;
-          -webkit-box-shadow: 0px 0px 5px #b8b8b8;
-          box-shadow: 0px 0px 5px #b8b8b8;   
-          transition: All .3s ease;
-          -webkit-transition: All .3s ease;
-          -moz-transition: All .3s ease;
-          -o-transition: All .3s ease;
+       .tooltip--text {
           visibility: hidden;
-          border-radius: 3px;
-          line-height: 1.45em;
-          @media(max-width: 767px){
-              padding-left: 45px;
-              width: 150px;
-              &.tooltip--hide{display: none;}
-          }
-        }
-        .tooltip--element__black{
+          width: 250px;
+          background-color:#fff;
+          color: #949793;
+          text-align: center;
+          border-radius: 4px;
+          padding: 10px;
           position: absolute;
-          z-index: 1;
-          top: -111%;
-          left: 35%;
-          margin-left: -100px;
-          text-align: left;
-          background-color:$black;
-          color: $white;
+          z-index: 2;
+          top: 150%;
+          left: 50%;
+          margin-left: -125px;
+          box-shadow: 0px 3px 10px -2px #9e9e9e;
+      }
+        .tooltip--tip {
+          position: absolute;
+          z-index: 0;
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          background: #fff;
+          left: 50%;
+          top: -0.5rem;
+          transform: translateX(-50%) rotate(45deg);
+          box-shadow: -3px -3px 10px -2px #9e9e9e;
+          transition: transform 200ms ease-out;
+        }
+        .tooltip:hover .tooltip--text {
+             visibility: visible;
         }
 
         .tooltip--element__white{
-          position: absolute;
-          z-index: 1;
-          top: 35%;
-          left: 0%;
-          margin-left: -100px;
-          text-align:center;
-          background-color:$white;
-          color:$black;
             .icon-share{
-              font-size: 18px;
+              font-size: 24px;
               background-color:#DDF4F5;
               color: #1BB3BC;
               border-radius: 50%;
               padding: 10px;
               margin: 0 auto;
             }
-            .title{
+            .tooltip--element__title{
               font-size: 20px;
-              padding: 5px 0 5px 0;
+              font-weigth:400;
+              margin: 10px 0 5px 0;
               color: $gray_dark;
-
             }
             p{
               font-size:14px;
+              margin:0;
             }
         }
         &:hover .tooltip--element {
