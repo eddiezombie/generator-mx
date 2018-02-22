@@ -1,8 +1,9 @@
 $(document).ready(function() {
-	  $('.added').click(function(){
-        $(".tooltip--element").removeClass('tooltip--hide');
+	$('.added').on('click',function(){
+        $('.tooltip--container').addClass('.tooltip--hide');
+        $('.tooltip').show('.tooltip--container');
     });
-    $('.agree').click(function(){
-        $(".tooltip--element").addClass('tooltip--hide');
+    $('.added').on('click',function(){
+        $('.tooltip--hide').removeClass('.tooltip--container');
     });
 });
