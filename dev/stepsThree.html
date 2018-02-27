@@ -7,18 +7,46 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<div class="padding-steps">
+		<!-- tres pasos -->
+		<div class="steps--content">
             <div class="steps">
-              <div class="item three prev">
-                <p>Ingresa tus datos</p><span class="paso">1</span>
+              <div class="steps--item three__total active">
+                <p>Comprobante</p><span class="steps__number">3</span>
               </div>
-              <div class="item three prev">
-                <p>Crea tu clave</p><span class="paso">2</span>
+              <div class="steps--space">
+                <span class="steps--space__two"></span>
+                <span class="steps--space__three"></span>
               </div>
-              <div class="item four active">
-                <p>Comprobante</p><span class="paso">3</span>
+              <span class="steps--total">Paso 3/3</span>
+            </div>
+        </div>
+		<!-- cuatro pasos -->
+        <div class="steps--content">
+            <div class="steps">
+              <div class="steps--item four__third active">
+                <p>Paso 3</p><span class="steps__number">3</span>
               </div>
-              <span class="total">Paso 3/3</span>
+              <div class="steps--space">
+                <span class="steps--space__four"></span>
+                <span class="steps--space__five"></span>
+                <span class="steps--space__six"></span>
+              </div>
+              <span class="steps--total">Paso 3/4</span>
+            </div>
+        </div>
+		<!-- Cinco pasos -->
+         <div class="steps--content">
+            <div class="steps">
+              <div class="steps--item five__third active">
+                <p>Paso 3</p><span class="steps__number">3</span>
+              </div>
+              <div class="steps--space">
+                <span class="steps--space__seven"></span>
+                <span class="steps--space__eight"></span>
+                <span class="steps--space__nine"></span>
+                 <span class="steps--space__ten"></span>
+              </div>
+              <span class="steps--total">Paso 3/5</span>
             </div>
         </div>
 
@@ -26,7 +54,8 @@
 			<div class="main">
 				<!-- Action -->
 	            <div class="btn--container">
-	                <a href="stepsTwo.html" class="btn btn--gray"><i class="icon-arrow--left"></i> Volver</a>
+	                 <a href="stepsTwo.html" class="btn btn--gray pull-left"> <i class="icon-arrow--left"></i>Volver</a>
+	                <a href="stepsFour.html" id="next-step" class="btn btn--red pull-right">Continuar <i class="icon-arrow--right"></i></a>
 	            </div>
 			</div>
 		</div>
