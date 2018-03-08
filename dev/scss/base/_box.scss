@@ -1,0 +1,167 @@
+.box{
+	background: #ffffff;
+	color: #444444;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	position: relative;
+	box-shadow: 0px 2px 4px 0px rgba(#191919, .1);
+	margin-bottom: 30px;
+	border-radius: 2px;
+	overflow:hidden;
+	&.box-flat{
+		box-shadow:none;
+		border: 1px solid #DDDDDD;
+	}
+	.box-row{
+		display:table;
+		width:100%;
+		&.adaptative{
+			width:initial;
+		}
+		&.align-top{
+			.box-col{
+				vertical-align:top;
+			}
+		}
+		&.align-middle{
+			.box-col{
+				vertical-align:middle;
+			}
+		}
+		@media screen and (max-width:768px) {
+			display:block;
+			.box-col{
+				display:block;
+			}
+		}
+		&.box-half{
+			.box-col{
+				width:50%;
+				@media screen and (max-width:768px) {
+					width:100%;
+				}
+			}
+		}
+	}
+	.box-col{
+		display:table-cell;
+		vertical-align:middle;
+		&.box-col-border_left{
+			border-left:solid 1px #E3E3E3;
+			@media screen and (max-width:768px) {
+				border-left:none;
+				border-top:solid 1px #E3E3E3;
+			}
+		}
+		@media screen and (max-width:768px) {
+			padding:10px 0!important;
+			.button.link span {
+				text-align:left;
+			}
+		}
+	}
+	.box-header{
+		padding:30px 50px;
+		border-bottom: 1px solid #DDDDDD;
+		.title{
+			margin:0;
+		}
+	}
+	.box-content{
+		padding: 20px;
+		&.bleeding{
+			padding-right:70px;
+			padding-left:70px;
+		}
+		&.bleeding-min{
+			padding-right:50px;
+			padding-left:50px;
+		}
+		@media screen and (max-width:768px) {
+			padding:15px;
+			&.bleeding{
+				padding:15px;
+			}
+		}
+	}
+	&.box-indicator{
+		text-align:center;
+		overflow:inherit;
+		margin-top:55px;
+		.box-icon{
+			display:block;
+			margin:0 auto;
+			margin-top:-36px;
+		}
+	}
+	.box-icon{
+		width:72px;
+		height:72px;
+		border-radius:72px;
+		display:inline-block;
+		line-height:72px;
+		font-size:32px;
+		vertical-align:middle;
+		&.box-icon-alert{
+			background-color:#EC0000;
+			color:#fff;
+		}
+		&.box-icon-success{
+			background-color:#ABC111;
+			color:#fff;
+		}
+	}
+	.box-title{
+		margin:0;
+		font-size:16px;
+	}
+	.box-text{
+		margin:0;
+		font-size:12px;
+	}
+	&.banner{
+		overflow:hidden;
+		border-radius:4px;
+		.box-header{
+			padding:0;
+			height:100px;
+			display:block;
+			width:100%;
+		}
+	}
+	&.box-super_clave{
+		max-width:500px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:0;
+	}
+	&.box-super_clave_internet{
+		max-width:500px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:0;
+	}
+	&.box-cambio_clave{
+		max-width:500px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:0;
+	}
+	&.box-default{
+		.box-header{
+			padding:15px;
+			.box-title{
+				font-weight:500;
+				color:#444444;
+				font-size:14px;
+				line-height:16px;
+				strong{
+					font-weight:700;
+				}
+			}
+		}
+		.box-content{
+			padding:15px;
+		}
+	}
+}

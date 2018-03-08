@@ -1,0 +1,61 @@
+.alert {
+	display:table;
+	width:100%;
+	padding:15px;
+	&.alert-warning{
+		background-color:#FCF2DE;
+		.alert-icon{
+			background-color:#E59D27;
+			background-image:url('../img/icon-warning.png');
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:13% auto;
+		}
+	}
+	&.alert-info{
+		background-color:#DDF4F5;
+		.alert-icon{
+			background-color:#1BB3BC;
+			// background-image:url('../img/icon-warning.png');
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:13% auto;
+		}
+		.alert-icon{
+			text-indent:inherit;
+			font-size:13px;
+		}
+		.link{
+			color:#1BB3BC;
+		}
+	}
+	.alert-indicator{
+		vertical-align:middle;
+		display:table-cell;
+		padding:10px 15px 10px 10px;
+	}
+	.alert-content{
+		vertical-align:middle;
+		display:table-cell;
+		text-align:left;
+	}
+	.alert-text{
+		display:block;
+		font-size:12px;
+		line-height:18px;
+		margin-bottom:10px;
+	}
+	.alert-icon{
+		width:24px;
+		height:24px;
+		display:block;
+		margin:0 auto;
+		text-align:center;
+		border-radius:24px;
+		color:#fff;
+		font-size:20px;
+		line-height:24px;
+		text-indent: -9999px;
+		overflow:hidden;
+	}
+}

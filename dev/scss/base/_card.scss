@@ -1,0 +1,71 @@
+.card{
+	background-color:#fff;
+	display:block;
+	margin: 0 auto;
+	text-align:center;
+	padding:10px;
+	border-radius:8px;
+	box-shadow:0 2px 20px 0 rgba(#000000, .2);
+	opacity:.5;
+	transform: scale3D(.9,.9,.9);
+	transition: all .3s ease-in-out;
+
+	.slick-current &{
+		opacity:1;
+		transform: scale3D(1,1,1);
+	}
+	.card-icon{
+		margin-bottom:10px;
+		i{
+			font-size:35px;
+			&.icon-candado{
+				color:#9E3667;
+			}
+			&.icon-tarjeta{
+				color:#EC0000;
+			}
+			&.icon-app{
+				color:#1BB3BC;
+			}
+			&.icon-telefono{
+				color:#E59D27;
+			}
+		}
+	}
+	.card-title{
+		color:#444444;
+		font-size:14px;
+		line-height:16px;
+	}
+	.card-state{
+		padding-top:10px;
+		margin-top:10px;
+		border-top:solid 1px #DDDDDD;
+		.card-text{
+			color:#444444;
+		}
+
+	}
+	.card-text{
+		font-size:10px;
+		color:#999999;
+		line-height:13px;
+		margin:0 auto;
+		strong{margin-left:4px;}
+		.success{
+			color:#ABC111;
+		}
+		.warning{
+			color:#E59D27;
+		}
+	}
+	@media screen and (min-width:769px) {
+		min-width:256px;
+	}
+	@media screen and (max-width:768px) {
+		margin:0 10px;
+	}
+	@media screen and (max-width:640px) {
+		max-width: 380px;
+	}
+}
