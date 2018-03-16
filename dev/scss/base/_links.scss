@@ -1,0 +1,27 @@
+.link{
+	color:$color_brand;
+	font-size: 14px;
+	vertical-align:middle;
+	font-weight:700;
+	&.link-icon{
+		display:inline-block;
+		width:30px;
+		height:30px;
+		text-indent:-9999px;
+		overflow:hidden;
+		margin:0 5px;
+		background-position:center;
+		background-repeat:no-repeat;
+	}
+	&.link-trash{
+		background-image:url('../img/Basurero.png');
+	}
+	&:hover{
+		// text-decoration:none;
+	}
+	@media screen and (max-width:768px) {
+		br{
+			display:none;
+		}
+	}
+}

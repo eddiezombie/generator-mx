@@ -1,34 +1,4 @@
 $(document).ready(function() {
-	$('#menu-slide').slick({
-		centerMode: true,
-		slidesToShow: 3,
-		initialSlide:2,
-		infinite: false,
-		focusOnSelect: true,
-		cssEase: 'ease-in-out',
-		asNavFor: '.slider-for',
-		centerPadding: '0px',
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-				arrows: true,
-				centerMode: true,
-				centerPadding: '20px',
-				slidesToShow: 3
-				}
-			},
-			{
-				breakpoint: 640,
-				settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '60px',
-				slidesToShow: 1
-				}
-			}
-		]
-	});
 	$('#menu-slide').on('afterChange', function(event, slick, currentSlide){
 		$('#content-slide').find('.step').removeClass('active');
 		$('#content-slide').find('.step-01').addClass('active');
