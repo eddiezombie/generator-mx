@@ -1,0 +1,217 @@
+.button{
+  border-radius: 30px;
+  padding: 12px 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align:center;
+  // text-transform: uppercase;
+  &.link{
+    padding:12px 0;
+    display:table;
+    text-align:left;
+    text-transform:inherit;
+    i{
+      display:table-cell;
+      vertical-align:middle;
+      padding-right:10px;
+      font-size:24px;
+    }
+    span{
+      display:table-cell;
+      vertical-align:middle;
+      text-transform:inherit;
+    }
+    &.link-small{
+      padding: 6px 0;
+      font-size:12px;
+      i{
+        font-size:12px;
+      }
+      span{
+        font-size:12px;
+      }
+    }
+  }
+  &.primary{
+    border-color:$color_brand;
+    color:$color_brand;
+    &.disabled{
+      border-color:#999;
+      color:#999;
+    }
+  }
+  &.disabled{
+    border-color:#999;
+    color:#999;
+    &:hover{
+      cursor:default;
+    }
+  }
+  &.outline{
+    border:solid 1px #C2C2C2;
+    &:hover{
+      border:solid 1px $color_brand;
+    }
+    &.primary{
+      border:solid 1px $color_brand;
+      background-color:transparent;
+      color:$color_brand;
+      &.disabled{
+        border-color:#999;
+        color:#999;
+
+      }
+    }
+  }
+  &.default{
+    border-color:transparent;
+    min-width:200px;
+    &.primary{
+      background-color:$color_brand;
+      color:$white;
+      &:hover{
+        background-color: #990000;
+      }
+    }
+  }
+  &:hover{
+    text-decoration:none;
+  }
+  @media screen and (max-width:768px) {
+  .text-mobile_center &.pull-right{
+    float:none;
+  }
+  }
+}
+
+.boton {
+  position: relative;
+  margin: 20px;
+  font-size: 14px;
+  display: inline-block;
+  padding: 13px 40px;
+  border-radius: 30px;
+  text-decoration:none;
+  transition: All .3s ease;
+  -webkit-transition: All .3s ease;
+  -moz-transition: All .3s ease;
+  -o-transition: All .3s ease;
+  &.botonRojo {
+    color:$white;
+    background-color: $color_brand;
+  }
+  &.botonIconoLeft {
+    padding: 13px 40px 13px 70px;
+  }
+  &.botonIconoRight {
+    padding: 13px 58px 13px 40px;
+  }
+  &.botonIconoLeftTexto {
+    padding: 13px 40px 13px 58px;
+  }
+  .icono-left {
+    font-size: 20px;
+    left: 40px;
+    position: absolute;
+  }
+  .icono-right {
+    font-size: 11px;
+    position: absolute;
+    right: 38px;
+    top: 18px;
+  }
+  .icono-leftAtras {
+    font-size: 11px;
+    position: absolute;
+    left: 38px;
+    top: 18px;
+  }
+  &.botonBlanco {
+    color: $color_brand;
+    background-color:$white;
+    -moz-box-shadow: inset 0px 0px 0px 1px$white;
+    -webkit-box-shadow: inset 0px 0px 0px 1px$white;
+    box-shadow: inset 0px 0px 0px 1px$white;
+  }
+  &.bordeGris {
+    -moz-box-shadow: inset 0px 0px 0px 1px #dddddd;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #dddddd;
+    box-shadow: inset 0px 0px 0px 1px #dddddd;
+  }
+  &.bordeRojo2 {
+    -moz-box-shadow: inset 0px 0px 0px 2px $color_brand;
+    -webkit-box-shadow: inset 0px 0px 0px 2px $color_brand;
+    box-shadow: inset 0px 0px 0px 2px $color_brand;
+    &:hover {
+      background-color: $color_brand;
+      color:$white;
+      -moz-box-shadow: inset 0px 0px 0px 2px $color_brand;
+      -webkit-box-shadow: inset 0px 0px 0px 2px $color_brand;
+      box-shadow: inset 0px 0px 0px 2px $color_brand;
+    }
+  }
+}
+
+.botonGris {
+  color:$white;
+  background-color: #C0C0C0;
+}
+
+.botonTextoRojo {
+  color: $color_brand;
+  background-color: transparent;
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: $color_brand;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition: All .3s ease;
+    -webkit-transition: All .3s ease;
+    -moz-transition: All .3s ease;
+    -o-transition: All .3s ease;
+  }
+  &:hover:before {
+    width: calc(100% - 80px);
+  }
+}
+
+.botonTextoGris {
+  color: #444;
+  background-color: transparent;
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #444;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition: All .3s ease;
+    -webkit-transition: All .3s ease;
+    -moz-transition: All .3s ease;
+    -o-transition: All .3s ease;
+  }
+  &:hover:before {
+    width: calc(100% - 80px);
+  }
+}
+
+.boton.botonRojo:hover {
+  background-color: #990000;
+}
+
+.bordeGris:hover {
+  -moz-box-shadow: inset 0px 0px 0px 1px $color_brand;
+  -webkit-box-shadow: inset 0px 0px 0px 1px $color_brand;
+  box-shadow: inset 0px 0px 0px 1px $color_brand;
+}

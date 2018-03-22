@@ -1,82 +1,63 @@
+
 $(document).ready(function() {
-	$('#menu-slide').on('afterChange', function(event, slick, currentSlide){
-		$('#content-slide').find('.step').removeClass('active');
-		$('#content-slide').find('.step-01').addClass('active');
-		$('input').val('');
-		$('.error input, .success input').val('1234');
+
+	$('.card--superkey').on('click',function(event) {
+		event.preventDefault();
+		$('#superclave').find('.active').removeClass('step');
+		$('#claveacceso').find('.step').removeClass('active');
 	});
-	$('#menu-slide').on('beforeChange', function(event, slick, currentSlide){
-		if ($('#pinpass').hasClass('slick-current')) {
-			$('.box.banner').hide();
-		}else{
-			$('.box.banner').show();
+
+	$('.card-keyAccess').on('click',function(event) {
+		event.preventDefault();
+		$('#claveacceso').find('.active').removeClass('step');
+		$('#superclave').find('.step').removeClass('active');
+	});
+
+	// Cambios de pasos
+	$('#superclave').on('click', '.js-activar', function(event) {
+		event.preventDefault();
+		$("#form-super_clave input").each(function(){
+			if($(this).val() === ''){
+				$(this).focus();
+				return false;
+			}else{
+				$('#superclave').find('.step').removeClass('active');
+				$('#superclave').find('.step-02').addClass('active');
+			}
+		});
+	});
+
+	$('#superclave').on('click', '.js-bloquear', function(event) {
+		event.preventDefault();
+		$("#form-clave_internet input").each(function(){
+			if($(this).val() === ''){
+				$(this).focus();
+				return false;
+			}else{
+				$('#superclave').find('.step').removeClass('active');
+				$('#superclave').find('.step-03').addClass('active');
+			}
+		});
+	});
+
+	$('#claveacceso').on('click', '.js-aceptar', function(event) {
+		event.preventDefault();
+		$("#form-cambio_clave input").each(function(){
+			if($(this).val() === ''){
+				$(this).focus();
+				return false;
+			}else{
+				$('#claveacceso').find('.step').removeClass('active');
+				$('#claveacceso').find('.step-02').addClass('active');
+			}
+		});
+	});
+
+	$('.form_security').find('.form_input').keyup(function () {
+		if (this.value.length == this.maxLength) {
+			$(this).parents('.form_field').next().children('.form_input').focus();
 		}
 	});
-	$('.slider-for').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		initialSlide:2,
-		fade: true,
-		infinite: false,
-		draggable:false,
-		asNavFor: '#menu-slide',
-		cssEase: 'ease-in-out'
-	});
 
-});
-
-
-// Cambios de pasos
-$('#superclave').on('click', '.js-activar', function(event) {
-	event.preventDefault();
-	$("#form-super_clave input").each(function(){
-		if($(this).val() === ''){
-			$(this).focus();
-			return false;
-		}else{
-			$('#superclave').find('.step').removeClass('active');
-			$('#superclave').find('.step-02').addClass('active');
-		}
-	});
-});
-
-$('#superclave').on('click', '.js-bloquear', function(event) {
-	event.preventDefault();
-	$("#form-clave_internet input").each(function(){
-		if($(this).val() === ''){
-			$(this).focus();
-			return false;
-		}else{
-			$('#superclave').find('.step').removeClass('active');
-			$('#superclave').find('.step-03').addClass('active');
-		}
-	});
-
-});
-$('#claveacceso').on('click', '.js-aceptar', function(event) {
-	event.preventDefault();
-	$("#form-cambio_clave input").each(function(){
-		if($(this).val() === ''){
-			$(this).focus();
-			return false;
-		}else{
-			$('#claveacceso').find('.step').removeClass('active');
-			$('#claveacceso').find('.step-02').addClass('active');
-		}
-	});
-});
-
-
-$('.js-getImage').each(function(i, e) {
-	var image;
-	image = $(e).find('.js-image img').attr('src');
-	$(e).find('.js-image').css('background-image', 'url(' + image + ')');
-	return $(e).find('.js-image');
-});
-
-$('.form_security').find('.form_input').keyup(function () {
-	if (this.value.length == this.maxLength) {
-		$(this).parents('.form_field').next().children('.form_input').focus();
-	}
+	
 });
