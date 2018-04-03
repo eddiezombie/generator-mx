@@ -7,7 +7,7 @@
         margin-bottom: -8px;
     }
 
-     ul.tabs_buttons {
+     ul.tabs--buttons {
       display: block;
       width: 100%;
       padding: 0;
@@ -67,7 +67,6 @@
                     -moz-transition: All .3s ease;
                     -o-transition: All .3s ease;
                 }
-
             }
         }
 
@@ -81,7 +80,7 @@
         }
     }
 
-    ul.tabs_buttons li a:hover span{
+    ul.tabs--buttons li a:hover span{
         width: calc(100% - 40px);
     }
 
@@ -95,11 +94,23 @@
             display: none;
         }
         & .cnt-tab{
+            
+            h3{
+                color: #444;
+                clear:both;
+                font-size: 18px;
+                text-align: left;
+                margin-top:40px;
+                @media(max-width: 767px){
+                    padding: 5px 20px;
+                    font-size: 16px;
+                    text-align:center;
+                }
+            }
             p{
                 text-align: left;
                 font-size: 12px;
                 font-weight: 300;
-                padding-bottom: 15px;
                 color:$gray;
                 clear: both;
                 @media(max-width: 767px){
@@ -122,60 +133,7 @@
                 font-weight: 200;
             }
         }
-        @media(max-width:767px){
-            clear: both;
-        }
-        #contenidoUno{
-            .apendice{
-                font-size: 12px;
-                margin-left: 20px;
-                padding-right: 17px;
-               
-            }
-             li{
-                list-style: none;
-                margin-bottom: 11px;
-                padding-left: 10px;
-            }
-            h3{
-                color: #444444;
-                font-size: 18px;
-                text-align: left;
-                margin-top: 0px;
-                min-height: 20px;
-            }
-        }
-        #contenidoDos{
-            li{
-                list-style: none;
-                margin-bottom: 11px;
-                padding-left: 10px;
-            }
-            h3{
-                color: #444444;
-                font-size: 18px;
-                text-align: left;
-                margin-top: 0px;
-            }
 
-        }
-        #contenidoTres{
-            h3{
-                color: #444444;
-                font-size: 18px;
-                text-align: left;
-                margin-top: 0px;
-            }
-            strong{
-                font-size: 14px;
-            }
-            li{
-                margin-bottom: 11px;
-                padding-left: 10px;
-            }
-            span{
-                color:$color-brand;
-            }
 
             .tables-table{
                 tbody{
@@ -187,51 +145,28 @@
                 }
             }
         }
-        #contenidoCuatro{
-            h3{
-                color: #444444;
-                font-size: 18px;
-                text-align: left;
-                margin-top: 0px;
-            }
+    }
 
-            
+.legal--box{
 
-            .cont-tab{
-                .cnt-tab{
-                    ul{
-                        margin-left: 0px;
-                    }
-                }
-            }
+    .legal--primary{
+        .legal--title{
+            color: #333;
+            font-weight: 300;
+            font-size: 16px;
         }
-        
+
+        .icon-arrow--down, .icon-arrow--above{
+            color:$color_brand;
+            font-size:16px;
+            float:right;
+        }
+        .legal--text{
+            font-size: 11px;
+            text-align: justify;
+            line-height: 16px;
+            padding:10px;
+            margin: 0px;
+        }
     }
-
- 
-}
-
-
-
-.panel-primary{
-    .panel-title{
-        color: #333;
-        font-weight: 300;
-        font-size: 16px;
-
-    }
-
-    .icon-arrow--down, .icon-arrow--above{
-        color:$color_brand;
-        font-size:16px;
-        float:right;
-    }
-    .text-legal{
-        font-size: 11px;
-        text-align: justify;
-        line-height: 16px;
-        padding:10px;
-        margin: 0px;
-    }
-
 }
