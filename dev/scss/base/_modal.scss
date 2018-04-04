@@ -1,3 +1,10 @@
+.modal--error{
+  float:right;
+}
+.modal--alert{
+  margin-left: 12%;
+}
+
 #modal-info-1{
   z-index:9999;
   .body-modal-new{
@@ -7,24 +14,20 @@
   .content-success{
     position: relative;
     margin-top: 50px;
-    .content-success__box-success{
-      padding: 10px;
-      padding-bottom: 10px;
+    .content-success__box{
+      padding: 10px 30px 20px;
       width: 100%;
       box-sizing: border-box;
       position: relative;
       margin: 0 auto;
       text-align: center;
       margin-top: 30px;
-      padding-left: 30px;
-      padding-right: 30px;
       position:relative;
       h2{
         color: #444;
-        margin-top: 20px;
         font-size: 24px;
         margin-bottom: 0;
-        margin-top:40px;
+        margin-top:50px;
         font-weight: 300;
         font-family: 'open sans' !important;
       }
@@ -33,27 +36,6 @@
         font-size: 12px;
       }
       //icono a utilizar
-      .icon--container__alert{
-        display:block;
-        height: 70px;
-        width:70px;
-        border-radius: 50%;
-        background-color: #1BB3BC;
-        position:absolute;
-        top:-30px;
-        left:45%;
-        @media (max-width:550px){
-          left:50%;
-        }
-          .icon-information{
-            color: $white;
-            font-size: 36px;
-            position:absolute;
-            top:12px;
-            left:15px;     
-          }
-      }
-
        .icon--container__success{
         display:block;
         height: 70px;
@@ -74,29 +56,18 @@
             left:17px;     
           }
       }
-
       .border{
         width: calc(100% + 22px);
         margin: 9px -5px -10px -11px;
       }
-      .small{
-        margin-top: 10px;
+      .content-success__small{
+        margin-bottom: 20px;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.5em;
         color: #444444;
         text-align: center;
       }
-      .logo_asoc{
-        img{
-          max-width: 200px;
-          height: auto;
-          width: 100%;
-          margin: 0 auto 15px;
-          display: block;
-        }
-      }
-
     }
   }
 }
@@ -107,20 +78,17 @@
     margin-top: 10px;
     background: #fff;
   }
-  .content-success{
+  .content-alert{
     position: relative;
     margin-top: 50px;
-    .content-success__box-success{
-      padding: 10px;
-      padding-bottom: 10px;
+    .content-alert__box{
+      padding: 10px 30px 20px;
       width: 100%;
       box-sizing: border-box;
       position: relative;
       margin: 0 auto;
       text-align: center;
       margin-top: 30px;
-      padding-left: 30px;
-      padding-right: 30px;
       position:relative;
       h2{
         color: #444;
@@ -161,24 +129,14 @@
         width: calc(100% + 22px);
         margin: 9px -5px -10px -11px;
       }
-      .small{
-        margin-top: 10px;
+      .content-alert__small{
+        margin-bottom: 20px;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.5em;
         color: #444444;
         text-align: center;
       }
-      .logo_asoc{
-        img{
-          max-width: 200px;
-          height: auto;
-          width: 100%;
-          margin: 0 auto 15px;
-          display: block;
-        }
-      }
-
     }
   }
 }
@@ -189,20 +147,17 @@
     margin-top: 10px;
     background: #fff;
   }
-  .content-success{
+  .content-wrong{
     position: relative;
     margin-top: 50px;
-    .content-success__box-success{
-      padding: 10px;
-      padding-bottom: 10px;
+    .content-wrong__box{
+      padding: 10px 30px 20px;
       width: 100%;
       box-sizing: border-box;
       position: relative;
       margin: 0 auto;
       text-align: center;
       margin-top: 30px;
-      padding-left: 30px;
-      padding-right: 30px;
       position:relative;
       h2{
         color: #444;
@@ -245,24 +200,14 @@
         width: calc(100% + 22px);
         margin: 9px -5px -10px -11px;
       }
-      .small{
-        margin-top: 10px;
+      .content-wrong__small{
+        margin-bottom: 20px;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.5em;
         color: #444444;
         text-align: center;
       }
-      .logo_asoc{
-        img{
-          max-width: 200px;
-          height: auto;
-          width: 100%;
-          margin: 0 auto 15px;
-          display: block;
-        }
-      }
-
     }
   }
 }
