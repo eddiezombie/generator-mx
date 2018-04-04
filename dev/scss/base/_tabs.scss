@@ -94,21 +94,25 @@
             display: none;
         }
         & .cnt-tab{
-            
             h3{
                 color: #444;
                 clear:both;
                 font-size: 18px;
                 text-align: left;
-                margin-top:40px;
+                padding-top:30px;
                 @media(max-width: 767px){
                     padding: 5px 20px;
                     font-size: 16px;
                     text-align:center;
                 }
             }
+            h4{
+                color: #444;
+                font-size: 16px;
+                text-align:left;
+            }
             p{
-                text-align: left;
+                text-align: justify;
                 font-size: 12px;
                 font-weight: 300;
                 color:$gray;
@@ -122,13 +126,13 @@
                     text-align: right;
                 }
             }
-            ul{
+            ul.circle{
                 color: #444;
-                text-align: left;
+                text-align: justify;
                 font-size: 12px;
                 margin-left: 16px;
                 padding-right: 10px;
-                list-style: none;
+                padding-bottom: 10px;
                 line-height: 150%;
                 font-weight: 200;
             }
