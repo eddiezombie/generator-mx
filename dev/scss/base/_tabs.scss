@@ -1,5 +1,4 @@
- #seccion{
-    position: relative;
+ .tabs{
     overflow: hidden;
     width: 100%;
     @media(max-width: 991px){
@@ -14,26 +13,19 @@
       margin-bottom: 20px;
       margin-top: 0px;
       @media(max-width: 767px){
-        overflow: auto;
-        white-space: nowrap;
-      }
-      @media(max-width:992px){
-        display: none;
+        float: none;
       }
 
-      li{
-            list-style: none;
-            display: inline-block;
-            float: left;
-            text-align: left; 
-
-            @media(max-width:767px){
-                float: none;
-                font-size: 13px;
-            }
-            @media(max-width:992px){
-                margin-bottom: 0px; 
-            }
+      .tabs--buttons__link{
+        list-style: none;
+        display: inline-block;
+        float: left;
+        text-align: left; 
+        @media(max-width:767px){
+            float: none;
+            font-size: 14px;
+            display: block;
+        }
             a{
                 display: block;
                 text-transform: none;
@@ -69,15 +61,6 @@
                 }
             }
         }
-
-         .border-bottom{
-            border-bottom: 1px solid #EEEEEE;
-            width: 94%;
-            position: absolute;
-            margin-left: 23px;
-            padding-right: 30px;
-            top: 78px;
-        }
     }
 
     ul.tabs--buttons li a:hover span{
@@ -87,14 +70,25 @@
     .active:focus{
         color:$color-brand;
     }
-
-    .cont-tab{
-
-        @media(max-width: 992px){
-            display: none;
+    
+    .border-bottom{
+        position: relative;
+    }
+    .border-bottom:before{
+        content:"";
+        height: 1px;
+        border-bottom: 1px solid #EEEEEE;
+        width: 90%;
+        position: absolute;
+        top: 55px;
+        @media(max-width: 767px){
+            top:36px;
         }
-        & .cnt-tab{
+    }
+    .cont-tab{
+        .tab--cont{
             h3{
+                overflow: hidden;
                 color: #444;
                 clear:both;
                 font-size: 18px;
@@ -110,6 +104,13 @@
                 color: #444;
                 font-size: 16px;
                 text-align:left;
+                padding-bottom: 5px;
+                font-weight: 500;
+                @media(max-width: 767px){
+                    padding: 5px 20px;
+                    font-size: 14px;
+                    text-align:center;
+                }
             }
             p{
                 text-align: justify;
@@ -123,7 +124,7 @@
                 }
 
                 @media(max-width: 992px){
-                    text-align: right;
+                    text-align: justify;
                 }
             }
             ul.circle{
@@ -135,22 +136,16 @@
                 padding-bottom: 10px;
                 line-height: 150%;
                 font-weight: 200;
-            }
-        }
 
-
-            .tables-table{
-                tbody{
-                    td{
-                        p{
-                            margin-left: 0px;
-                        }
-                    }
+                li{
+                    padding-top: 2px;
+                    padding-bottom:2px;
                 }
             }
         }
     }
 
+}
 .legal--box{
 
     .legal--primary{

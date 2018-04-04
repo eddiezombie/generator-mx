@@ -1,11 +1,11 @@
 function inicia_tab(){
      //tabs
-     $('.cnt-tab').hide();
+     $('.tab--cont').hide();
     // $('.cnt-tab:first').show();
      $(".btn-tab").on( "click", function() {
        $(".btn-tab").removeClass('active');
        $(this).addClass('active');
-       $('.cnt-tab').hide();
+       $('.tab--cont').hide();
        var tab = $(this).attr('href');
        $(tab).show();
        return false;
