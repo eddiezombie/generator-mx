@@ -1,23 +1,38 @@
-# mxyo
+# generator-mxyo [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> 
 
-Una base para trabajos de front-end básicos, principalmente para la generación de templates html.
+## Installation
 
-Este proyecto utiliza lo siguiente:
+First, install [Yeoman](http://yeoman.io) and generator-mxyo using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
-- Gulp
-- Sass
-- Bem constructor (Metodología Bem)
-
-## Instalación
-La primera vez siempre debes instalar los npm
-
-```
-npm install
+```bash
+npm install -g yo
+npm install -g generator-mxyo
 ```
 
-## Tareas
-Crea un servidor local y se mantiene escuchando los cambios en los archivos scss.
+Then generate your new project:
 
+```bash
+yo mxyo
 ```
-gulp
-```
+
+## Getting To Know Yeoman
+
+ * Yeoman has a heart of gold.
+ * Yeoman is a person with feelings and opinions, but is very easy to work with.
+ * Yeoman can be too opinionated at times but is easily convinced not to be.
+ * Feel free to [learn more about Yeoman](http://yeoman.io/).
+
+## License
+
+Apache-2.0 © []()
+
+
+[npm-image]: https://badge.fury.io/js/generator-mxyo.svg
+[npm-url]: https://npmjs.org/package/generator-mxyo
+[travis-image]: https://travis-ci.org//generator-mxyo.svg?branch=master
+[travis-url]: https://travis-ci.org//generator-mxyo
+[daviddm-image]: https://david-dm.org//generator-mxyo.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org//generator-mxyo
+[coveralls-image]: https://coveralls.io/repos//generator-mxyo/badge.svg
+[coveralls-url]: https://coveralls.io/r//generator-mxyo
